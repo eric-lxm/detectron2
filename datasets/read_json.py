@@ -188,7 +188,7 @@ def parse_args():
     parser.add_argument("--recursive-depth",type = int, default = 0, help = "depth of root path to files, if files are on the root path, the value should be 0")
     parser.add_argument("--label-type", default = "points", help = "[points],...")
 
-    parser.add_argument("--categories", default={1111:'meter'}, type=dict, help="it should be as {0:'dog', 1:'cat'} the key should be category id(int), and the value should be category name(str)")
+    parser.add_argument("--categories", default={}, type=dict, help="it should be as {0:'dog', 1:'cat'} the key should be category id(int), and the value should be category name(str)")
 
     args = parser.parse_args()
     return args
